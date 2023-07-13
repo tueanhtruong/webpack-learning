@@ -28,8 +28,8 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    open: true,
     port: 8080,
+    open: true,
     hot: true,
   },
 };
