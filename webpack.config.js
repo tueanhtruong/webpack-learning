@@ -17,7 +17,13 @@ module.exports = {
     }),
   ],
   module: {
-    rules: [{ test: /\.handlebars$/, loader: "handlebars-loader" }],
+    rules: [
+      { test: /\.handlebars$/, loader: "handlebars-loader" },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
   resolve: {
     alias: {
@@ -31,5 +37,6 @@ module.exports = {
     open: true,
     port: 8080,
     hot: true,
+    watchFiles: ["src/*"],
   },
 };

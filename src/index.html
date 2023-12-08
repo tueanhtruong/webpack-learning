@@ -1,61 +1,51 @@
 <html>
   <head>
     <!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
-    <style>
-      .container {
-        display: flex;
-        flex-direction: column;
-        max-width: 888px;
-        margin: 32px auto;
-        padding: 32px;
-      }
-      .view-item {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin: 8px 0;
-      }
-      .view-item__label {
-        color: #91979e;
-        width: 200px;
-        font-weight: 600;
-        font-size: 14px;
-      }
-      .view-item__value {
-        color: #6d7176;
-        font-weight: 400;
-        font-size: 16px;
-      }
-      .sub-label {
-        color: #63a883;
-        font-weight: 600;
-        font-size: 20px;
-      }
-      table {
-        border-bottom: 1px solid #e1e5e8;
-      }
-      thead {
-        font-weight: 600;
-        font-size: 14px;
-        color: #91979e;
-      }
-      th,
-      td {
-        text-align: left;
-        padding: 8px 0;
-      }
-      td {
-        font-weight: 400;
-        font-size: 16px;
-        color: #6d7176;
-      }
-      th {
-        border-bottom: 1px solid #e1e5e8;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body style="font-family: Arial, Helvetica, sans-serif">
+    <div class="base">
+      <input type="checkbox" id="input-main" class="input" role="switch" />
+      <label class="label" for="input-main">
+        <span class="thumb">
+          <span class="track">
+            <span class="track-flip">
+              <!-- <CheckmarkOutline id="check-mark-icon" /> -->
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                ref="{ref}"
+                fill="currentColor"
+                class="mag-icon"
+                id="check-mark-icon"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M27.707 7.293a1 1 0 0 1 0 1.414l-14 14a1 1 0 0 1-1.414 0l-8-8a1 1 0 1 1 1.414-1.414L13 20.586 26.293 7.293a1 1 0 0 1 1.414 0Z"
+                />
+              </svg>
+              <!-- close remove icon -->
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                ref="{ref}"
+                fill="currentColor"
+                class="mag-icon"
+                id="close-remove-icon"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M24.708 7.293a1 1 0 0 1 0 1.414L17.415 16l7.293 7.293a1 1 0 0 1-1.415 1.414L16 17.414l-7.293 7.293a1 1 0 0 1-1.414-1.414L14.586 16 7.293 8.707a1 1 0 1 1 1.414-1.414L16 14.586l7.294-7.293a1 1 0 0 1 1.414 0Z"
+                />
+              </svg>
+            </span>
+          </span>
+        </span>
+        <span>label</span>
+      </label>
+    </div>
     <script src="./index.js"></script>
-    <div id="template1area"></div>
   </body>
 </html>
