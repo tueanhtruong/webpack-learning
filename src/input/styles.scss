@@ -1,0 +1,39 @@
+:root {
+  --mag-colors-green-500: #25b570;
+  --mag-colors-neutral-500: #8b939e;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  margin: auto;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.base {
+  padding: 0 8px;
+  position: relative;
+  max-width: 100%;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  overflow: hidden;
+  height: 32px;
+  .width-machine {
+    position: relative;
+    text-wrap: nowrap;
+  }
+  .input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 8;
+  }
+}
